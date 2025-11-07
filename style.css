@@ -140,7 +140,14 @@ h1 {
   height: 100vh;
   margin-left: 0;
   width: 100%;
-  background: radial-gradient(circle 110vh, rgb(113, 69, 163), rgb(14, 0, 48));
+  /* background: radial-gradient(circle 110vh, rgb(113, 69, 163), rgb(14, 0, 48)); */
+    background:
+    url('background.png'),
+    /* rgb(14, 0, 48); */
+    radial-gradient(circle 90vh at center, rgb(77, 48, 111), rgb(14, 0, 48));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   margin-bottom: 0;
   padding: 0;
   z-index: 1;
