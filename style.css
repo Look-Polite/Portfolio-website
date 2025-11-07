@@ -162,6 +162,7 @@ h1 {
     background-color:#1b122d;
     z-index: 50;
     padding: 0;
+    padding-bottom: 10vh;
 }
 
 #scrollhere {
@@ -245,6 +246,7 @@ h1 {
   width: 80vh;
   margin-top: 10vh;
   margin: 0 auto;
+  margin-bottom: 10vh;
 }
 
 .bodyText {
@@ -267,4 +269,41 @@ h1 {
   z-index: 20;
   margin: 0;
   padding: 0;
+}
+
+.diamondGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 8vh);
+  grid-auto-rows: 10vh;
+  gap: 0;
+}
+
+.diamondGrid > .diamond:nth-child(even) {
+  transform: translateY(11.6vh) scaleY(1.5) translate(5vh,0) rotate(45deg);
+}
+
+.diamond {
+  transform: scaleY(1.5) translate(5vh,0) rotate(45deg);
+  position: relative;
+  height: 10vh;
+  width: 10vh;
+  background-color: white;
+  transform-origin: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.diamondText {
+  transform: rotate(-45deg);
+}
+
+.dRed {
+  background-color: red;
+}
+
+.diamond:hover {
+  box-shadow: 0 0 20px 5px #fffa91;
 }
