@@ -103,7 +103,10 @@ h1 {
   height: 45vh;
   width: auto;
   border-radius: 100%;
-  box-shadow: 0 0 3vh white;
+  /* border-width: 3px;
+  border-color: black;
+  border-style: solid; */
+  box-shadow: 0 0 2vh black;
   z-index: 20;
   padding:0;
   user-select: none;
