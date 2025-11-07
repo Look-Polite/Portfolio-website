@@ -27,7 +27,7 @@ body {
     will-change: transform;
     display:flex; align-items:center; justify-content:center;
     border-radius: 100%;
-    box-shadow: 0 0 20vh 10vh rgb(255, 255, 255,0.4);
+    box-shadow: 0 0 20vh 10vh rgb(178, 110, 255,0.4);
     margin: 0;
     padding: 0;
   }
@@ -37,7 +37,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #555555;
   border: none;
   border-bottom: 1px solid rgb(177, 177, 177);
   box-sizing: border-box;
@@ -47,7 +46,7 @@ body {
   left: 0;
   width: 100%;
   z-index: 100;
-  background-color: rgba(71, 71, 71, 0.5);
+  background-color: rgb(14, 0, 48, 0.2);
   backdrop-filter: blur(7px);
   overflow: hidden;
 }
@@ -114,7 +113,7 @@ h1 {
   position: relative;
   margin-top: 7vh;
   display:block;
-  color:white;
+  color:beige;
   font-size: 5vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   z-index: 20;
@@ -126,7 +125,7 @@ h1 {
 }
 
 .name, .changingText {
-  color: rgb(164, 166, 255);
+  color: #edbf40;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   z-index: 20;
   margin: 0;
@@ -138,7 +137,7 @@ h1 {
   height: 100vh;
   margin-left: 0;
   width: 100%;
-  background: radial-gradient(circle 110vh, rgb(68, 68, 68), rgb(29, 29, 29));
+  background: radial-gradient(circle 110vh, rgb(113, 69, 163), rgb(14, 0, 48));
   margin-bottom: 0;
   padding: 0;
   z-index: 1;
@@ -150,7 +149,7 @@ h1 {
 .aboutSection {
   margin-top: 0;
   position: relative;
-    background-color:#1f1f1f;
+    background-color:#1b122d;
     z-index: 50;
     padding: 0;
 }
@@ -179,7 +178,8 @@ h1 {
   margin: 0;
   position: absolute;
   border-radius: 100%;
-  background: radial-gradient(circle 90vh, rgb(93, 93, 93), transparent 90%);
+  background: radial-gradient(circle 90vh, rgb(178, 110, 255), transparent 90%);
+  opacity: 30%;
   pointer-events: none;
   z-index: 1;
   width: 140vh;
@@ -193,7 +193,8 @@ h1 {
   margin: 0;
   position: absolute;
   border-radius: 100%;
-  background: radial-gradient(circle 60vh, rgb(93, 93, 93), transparent 90%);
+  background: radial-gradient(circle 60vh, rgb(178, 110, 255), transparent 90%);
+  opacity: 30%;
   pointer-events: none;
   z-index: 1;
   width: 140vh;
@@ -222,15 +223,17 @@ h1 {
   width: 50vh;
   margin: 0 auto;
   padding-bottom: 2vh;
-  border-bottom: solid 0.8vh rgb(164, 166, 255);
+  border-bottom: solid 0.8vh #edbf53;
 }
 
 .bodyBackground {
-  background-color: rgba(0, 0, 73, 0.1);
-  border-radius: 30px;
+  background-color: rgb(14, 2, 49, 0.3);
+  border-radius: 15px;
+  border-width: 2px;
+  border-color: #edbf53;
+  border-style: solid;
   width: 80vh;
   margin-top: 10vh;
-  box-shadow: 0 0 30px rgba(0, 0, 73, 0.2);
   margin: 0 auto;
 }
 
