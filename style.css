@@ -13,7 +13,6 @@ body {
   padding: 0;
   box-sizing: border-box;
   margin: 0;
-  background-color:#272727;
 }
 
 .follower {
@@ -129,7 +128,6 @@ h1 {
 .name, .changingText {
   color: rgb(164, 166, 255);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-
   z-index: 20;
   margin: 0;
   padding: 0;
@@ -227,11 +225,17 @@ h1 {
   border-bottom: solid 0.8vh rgb(164, 166, 255);
 }
 
-.underline {
-
+.bodyBackground {
+  background-color: rgba(0, 0, 73, 0.1);
+  border-radius: 30px;
+  width: 80vh;
+  margin-top: 10vh;
+  box-shadow: 0 0 30px rgba(0, 0, 73, 0.2);
+  margin: 0 auto;
 }
 
 .bodyText {
+  opacity: 100%;
   position: relative;
   display:block;
   color:white;
@@ -239,6 +243,15 @@ h1 {
   margin: 0 auto;
   font-size: 3vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding-top: 10vh;
   text-align: center;
+}
+
+.highlight {
+  color: rgb(164, 166, 255);
+  font-size: 3vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: underline;
+  z-index: 20;
+  margin: 0;
+  padding: 0;
 }
