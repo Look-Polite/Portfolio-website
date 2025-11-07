@@ -126,7 +126,7 @@ h1 {
   text-align: center;
 }
 
-.name {
+.name, .changingText {
   color: rgb(164, 166, 255);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 
@@ -207,4 +207,38 @@ h1 {
   position: relative;
   width: 0;
   height: 0;
+}
+
+.aboutMe {
+  position: relative;
+  display:block;
+  color:white;
+  font-size: 9vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  z-index: 20;
+  padding: 0;
+  user-select: none;
+  text-align: center;
+  padding-top: 8vh;
+  font-weight: 500;
+  width: 50vh;
+  margin: 0 auto;
+  padding-bottom: 2vh;
+  border-bottom: solid 0.8vh rgb(164, 166, 255);
+}
+
+.underline {
+
+}
+
+.bodyText {
+  position: relative;
+  display:block;
+  color:white;
+  width: 70vh;
+  margin: 0 auto;
+  font-size: 3vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 10vh;
+  text-align: center;
 }
