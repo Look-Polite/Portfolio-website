@@ -100,7 +100,7 @@ h1 {
 
 .landingImage {
   position: relative;
-  margin-top: 19vh;
+  margin-top: 22vh;
   display:block;
   height: 45vh;
   width: auto;
@@ -144,6 +144,7 @@ h1 {
   margin-bottom: 0;
   padding: 0;
   z-index: 1;
+  overflow: hidden;
 }
 
 

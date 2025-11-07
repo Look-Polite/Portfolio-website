@@ -10,7 +10,7 @@
   }, { passive: true });
 })();
 
-const words = ["student", "developer", "learner", "creator"];
+const words = ["developer", "student", "creator", "learner"];
 let index = 0;
 let typeDelete = 0;
 const typeSpeed = 100;
