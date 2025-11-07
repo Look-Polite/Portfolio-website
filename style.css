@@ -146,6 +146,8 @@ h1 {
   z-index: 1;
 }
 
+
+
 .aboutSection {
   margin-top: 0;
   position: relative;
@@ -170,4 +172,38 @@ h1 {
   0% { opacity: 1; }
   50% { opacity: 0; }
   100% { opacity: 1; }
+}
+
+.glow1 {
+  transform: translate(-40%, -10%);
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  border-radius: 100%;
+  background: radial-gradient(circle 90vh, rgb(93, 93, 93), transparent 90%);
+  pointer-events: none;
+  z-index: 1;
+  width: 140vh;
+  height: 140vh;
+  filter: blur(30px);
+}
+
+.glow2 {
+  transform: translate(90%, 10%);
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  border-radius: 100%;
+  background: radial-gradient(circle 60vh, rgb(93, 93, 93), transparent 90%);
+  pointer-events: none;
+  z-index: 1;
+  width: 140vh;
+  height: 140vh;
+  filter: blur(30px);
+}
+
+.glowbox {
+  position: relative;
+  width: 0;
+  height: 0;
 }
