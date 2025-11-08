@@ -271,22 +271,31 @@ h1 {
   padding: 0;
 }
 
-.diamondGrid {
+
+.diamondRow, .diamondRowOffset{
+  padding-top: 0vh;
+  grid-column-gap: 0;
+  place-items: start;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 8vh);
-  grid-auto-rows: 10vh;
+  grid-template-columns: repeat(auto-fit  , 15vw);
+  grid-auto-rows: 24vh;
   gap: 0;
+  margin-left: 0;
+  justify-content: start;
+  padding-bottom: 0;
+  padding-left: 5vw;
 }
 
-.diamondGrid > .diamond:nth-child(even) {
-  transform: translateY(11.6vh) scaleY(1.5) translate(5vh,0) rotate(45deg);
+.diamondRowOffset {
+  padding-top: 0vh;
+  padding-left: 12.5vw;
 }
 
 .diamond {
-  transform: scaleY(1.5) translate(5vh,0) rotate(45deg);
+  transform: scaleY(1.5) rotate(45deg);
   position: relative;
-  height: 10vh;
-  width: 10vh;
+  height: 20vh;
+  width: 20vh;
   background-color: white;
   transform-origin: center;
   align-items: center;
@@ -294,10 +303,16 @@ h1 {
   display: flex;
   padding: 0;
   margin: 0;
+  border: black;
+  border-style: solid;
+  border-width: 1px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .diamondText {
-  transform: rotate(-45deg);
+  transform: rotate(-45deg) scaleY(0.7);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 .dRed {
@@ -306,4 +321,25 @@ h1 {
 
 .diamond:hover {
   box-shadow: 0 0 20px 5px #fffa91;
+  transform: scale(1.1) scaleY(1.5) rotate(45deg) ;
+}
+
+.infoBox {
+  position: relative;
+  width: 20vh;
+  height: 20vh;
+  background-color: white;
+  left: 0;
+  top: 0;
+}
+
+.diamond:hover ~ .infoBox {
+  background-color: black;
+}
+
+.skillWrapper {
+  display: inline;
+  position: relative;
+  place-items: center;
+
 }
