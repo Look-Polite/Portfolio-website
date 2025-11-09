@@ -1,3 +1,4 @@
+//This function makes a "glow" effect follow the cursor
 (function(){
   const follower = document.getElementById('follower');
 
@@ -10,6 +11,7 @@
   }, { passive: true });
 })();
 
+//This function creates a typing effect that cycles through a list of words
 const words = ["developer", "student", "creator", "learner"];
 let index = 0;
 let typeDelete = 0;
@@ -39,3 +41,17 @@ function type() {
   setTimeout(type, typeSpeed / 2);
 }
 type();
+
+
+//This section makes the diamonds with skills 
+const text = document.querySelector(".infoText");
+const diamond = document.getElementById("test1");
+
+diamond.addEventListener("mouseenter", () => {
+  text.textContent = "working test";
+  text.style.color = "red";
+diamond.addEventListener("mouseleave", () => {
+  text.textContent = "Normal text";
+  text.style.color = "black";
+  });
+});

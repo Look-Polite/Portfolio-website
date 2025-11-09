@@ -94,6 +94,7 @@ h1 {
   place-items: center;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 .landingImage {
@@ -275,27 +276,28 @@ h1 {
 .diamondRow, .diamondRowOffset{
   padding-top: 0vh;
   grid-column-gap: 0;
-  place-items: start;
+  /* place-items: start; */
   display: grid;
-  grid-template-columns: repeat(auto-fit  , 15vw);
-  grid-auto-rows: 24vh;
+  grid-template-columns: repeat(4, 15vw);
+  grid-auto-rows:11vw;
   gap: 0;
   margin-left: 0;
   justify-content: start;
   padding-bottom: 0;
-  padding-left: 5vw;
+  padding-left: 5.1vw;
+  overflow: visible;
 }
 
 .diamondRowOffset {
   padding-top: 0vh;
-  padding-left: 12.5vw;
+  padding-left: 12.6vw;
 }
 
 .diamond {
   transform: scaleY(1.5) rotate(45deg);
   position: relative;
-  height: 20vh;
-  width: 20vh;
+  height: 10vw;
+  width: 10vw;
   background-color: white;
   transform-origin: center;
   align-items: center;
@@ -325,21 +327,35 @@ h1 {
 }
 
 .infoBox {
-  position: relative;
-  width: 20vh;
-  height: 20vh;
+  position: absolute;
+  width: 26vw;
+  height: 35vw;
   background-color: white;
-  left: 0;
-  top: 0;
+  left: -13vw;
+  transform: translate(80vw, 5vh);
+  border-radius: 20px;
+  text-align: center;
 }
 
 .diamond:hover ~ .infoBox {
   background-color: black;
 }
 
-.skillWrapper {
+
+.diamondGrid {
   display: inline;
   position: relative;
   place-items: center;
+  height: auto;
+}
 
+
+.skillWrapper {
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: nowrap;
+  /* overflow-x: auto;
+  overflow-y: hidden; */
+  white-space: nowrap;
+  align-items: center;
 }
