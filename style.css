@@ -384,3 +384,10 @@ h1 {
   transform: translateY(-1px);     /* Small lift effect */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+
+.infoTitle{
+  margin-top: 2vh;
+  font-weight: bold;
+  font-size: 6vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

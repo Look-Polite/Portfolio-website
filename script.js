@@ -44,22 +44,66 @@ type();
 
 
 //This section makes the diamonds with skills 
-const text = document.querySelector(".infoText");
+const text = document.querySelector(".infoTitle");
 const java = document.getElementById("java");
 const python = document.getElementById("python");
 const js = document.getElementById("js");
+const php = document.getElementById("php");
+const html = document.getElementById("html");
+const css = document.getElementById("css");
+const aws = document.getElementById("aws");
+const sql = document.getElementById("sql");
+const wireshark = document.getElementById("wireshark");
+const virtualbox = document.getElementById("virtualbox");
+
+
 
 java.addEventListener("mouseenter", () => {
-  text.textContent = "java";
+  text.textContent = "Java";
   text.style.color = "red";
 });
 
 python.addEventListener("mouseenter", () => {
-  text.textContent = "python";
+  text.textContent = "Python";
   text.style.color = "red";
 });
 
 js.addEventListener("mouseenter", () => {
-  text.textContent = "javascript";
+  text.textContent = "Javascript";
+  text.style.color = "red";
+});
+
+php.addEventListener("mouseenter", () => {
+  text.textContent = "PHP";
+  text.style.color = "red";
+});
+
+html.addEventListener("mouseenter", () => {
+  text.textContent = "HTML";
+  text.style.color = "red";
+});
+
+css.addEventListener("mouseenter", () => {
+  text.textContent = "CSS";
+  text.style.color = "red";
+});
+
+aws.addEventListener("mouseenter", () => {
+  text.textContent = "AWS";
+  text.style.color = "red";
+});
+
+sql.addEventListener("mouseenter", () => {
+  text.textContent = "SQL";
+  text.style.color = "red";
+});
+
+wireshark.addEventListener("mouseenter", () => {
+  text.textContent = "Wireshark";
+  text.style.color = "red";
+});
+
+virtualbox.addEventListener("mouseenter", () => {
+  text.textContent = "Virtualbox";
   text.style.color = "red";
 });
