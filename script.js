@@ -45,13 +45,21 @@ type();
 
 //This section makes the diamonds with skills 
 const text = document.querySelector(".infoText");
-const diamond = document.getElementById("test1");
+const java = document.getElementById("java");
+const python = document.getElementById("python");
+const js = document.getElementById("js");
 
-diamond.addEventListener("mouseenter", () => {
-  text.textContent = "working test";
+java.addEventListener("mouseenter", () => {
+  text.textContent = "java";
   text.style.color = "red";
-diamond.addEventListener("mouseleave", () => {
-  text.textContent = "Normal text";
-  text.style.color = "black";
-  });
+});
+
+python.addEventListener("mouseenter", () => {
+  text.textContent = "python";
+  text.style.color = "red";
+});
+
+js.addEventListener("mouseenter", () => {
+  text.textContent = "javascript";
+  text.style.color = "red";
 });

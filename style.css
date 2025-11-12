@@ -359,3 +359,28 @@ h1 {
   white-space: nowrap;
   align-items: center;
 }
+
+
+
+.icon{
+  transform: rotate(-45deg);
+  height: 6vw;
+}
+
+.resume {
+  background-color: #edbf53;
+  color: black;
+  border: none;
+  padding: 5px;
+  margin: 20px;
+  margin-top: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.resume:hover {
+  background-color: #fcbc28;       /* Slightly darker blue */
+  transform: translateY(-1px);     /* Small lift effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
