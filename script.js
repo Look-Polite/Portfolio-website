@@ -43,8 +43,10 @@ function type() {
 type();
 
 
-//This section makes the diamonds with skills 
+//This section makes the diamonds with skills and changes what the box says when they are hovered
 const text = document.querySelector(".infoTitle");
+const body = document.getElementById("body");
+
 const java = document.getElementById("java");
 const python = document.getElementById("python");
 const js = document.getElementById("js");
@@ -60,50 +62,41 @@ const virtualbox = document.getElementById("virtualbox");
 
 java.addEventListener("mouseenter", () => {
   text.textContent = "Java";
-  text.style.color = "red";
+  body.textContent = ""
 });
 
 python.addEventListener("mouseenter", () => {
   text.textContent = "Python";
-  text.style.color = "red";
 });
 
 js.addEventListener("mouseenter", () => {
   text.textContent = "Javascript";
-  text.style.color = "red";
 });
 
 php.addEventListener("mouseenter", () => {
   text.textContent = "PHP";
-  text.style.color = "red";
 });
 
 html.addEventListener("mouseenter", () => {
   text.textContent = "HTML";
-  text.style.color = "red";
 });
 
 css.addEventListener("mouseenter", () => {
   text.textContent = "CSS";
-  text.style.color = "red";
 });
 
 aws.addEventListener("mouseenter", () => {
   text.textContent = "AWS";
-  text.style.color = "red";
 });
 
 sql.addEventListener("mouseenter", () => {
   text.textContent = "SQL";
-  text.style.color = "red";
 });
 
 wireshark.addEventListener("mouseenter", () => {
   text.textContent = "Wireshark";
-  text.style.color = "red";
 });
 
 virtualbox.addEventListener("mouseenter", () => {
   text.textContent = "Virtualbox";
-  text.style.color = "red";
 });
