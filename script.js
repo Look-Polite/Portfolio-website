@@ -46,6 +46,7 @@ type();
 //This section makes the diamonds with skills and changes what the box says when they are hovered
 const text = document.querySelector(".infoTitle");
 const body = document.getElementById("body");
+const spec = document.querySelector(".codeClass");
 
 const java = document.getElementById("java");
 const python = document.getElementById("python");
@@ -62,15 +63,20 @@ const virtualbox = document.getElementById("virtualbox");
 
 java.addEventListener("mouseenter", () => {
   text.textContent = "Java";
-  body.textContent = ""
+  body.style.whiteSpace = "pre";
+  body.textContent = "• Coursework: basic coding and scripting applications\n• Personal Tic Tac Toe application";
+  spec.textContent = "Backend";
+  spec.style.color = "orange";
 });
 
 python.addEventListener("mouseenter", () => {
   text.textContent = "Python";
+  body.textContent = "Most of my work with Python has involved data or machine learning. I like how beginner friendly it is, and how libraries such as Numpy or pandas make it super simple to explore and manipulate data. ";
 });
 
 js.addEventListener("mouseenter", () => {
   text.textContent = "Javascript";
+  body.textContent = "";
 });
 
 php.addEventListener("mouseenter", () => {

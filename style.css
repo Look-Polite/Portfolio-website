@@ -53,12 +53,21 @@ body {
   overflow: hidden;
 }
 
+.navleft a {
+  user-select: none;
+}
+
 .navright {
-    display: flex;
     align-items: center;
-    gap: 15px; /* adds space between items */
+    text-wrap: nowrap;
+    display: inline-block;
+    padding: 0;
+    margin: 0; 
   }
 
+.navright a {
+  margin-left: 1vw;
+}
 .topnav .logo {
   color: white;
   text-decoration: none;
@@ -412,10 +421,24 @@ h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.infoBody{
-   margin: 4vh;
+.codeClass{
+  margin-top: 1vh;
+  font-weight: bold;
+  font-size: 5vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.useCase{
+  margin-top: 1vh;
   font-weight: bold;
   font-size: 3vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.infoBody{
+  margin: 4vh;
+  font-weight: 100;
+  font-size: 3.2vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -433,4 +456,9 @@ h1 {
     box-sizing: border-box;
   padding: 0;
   border: none;
+}
+
+.logo {
+  transform: translateY(2px);
+  width: 2.5vw;
 }
