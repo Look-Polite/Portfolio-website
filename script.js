@@ -63,28 +63,35 @@ const virtualbox = document.getElementById("virtualbox");
 
 java.addEventListener("mouseenter", () => {
   text.textContent = "Java";
-  body.style.whiteSpace = "pre";
-  body.textContent = "• Coursework: basic coding and scripting applications\n• Personal Tic Tac Toe application";
+  body.textContent = "• Coursework: foundational coding and scripting applications\n\n• Personal Tic Tac Toe application";
   spec.textContent = "Backend";
   spec.style.color = "orange";
 });
 
 python.addEventListener("mouseenter", () => {
   text.textContent = "Python";
-  body.textContent = "Most of my work with Python has involved data or machine learning. I like how beginner friendly it is, and how libraries such as Numpy or pandas make it super simple to explore and manipulate data. ";
+  body.textContent = "• Coursework: machine learning applications including data processing and model training";
+  spec.textContent = "Backend";
+  spec.style.color = "orange";
 });
 
 js.addEventListener("mouseenter", () => {
   text.textContent = "Javascript";
-  body.textContent = "";
+  body.textContent = "• Coursework: handling responsive nature of coursework websites \n\n • Used to power the animations and interactive features of this site";
+  spec.textContent = "Frontend";
+  spec.style.color = "rgb(78, 78, 255)";
 });
 
 php.addEventListener("mouseenter", () => {
   text.textContent = "PHP";
+  body.textContent = "• Coursework: backend scripting and serverside form handling";
+  spec.textContent = "Backend";
+  spec.style.color = "orange";
 });
 
 html.addEventListener("mouseenter", () => {
   text.textContent = "HTML";
+  body.textContent = "• Coursework: styled websites made for class projects \n\n • Used to create the content of the website you're currently on"
 });
 
 css.addEventListener("mouseenter", () => {

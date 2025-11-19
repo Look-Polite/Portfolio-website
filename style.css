@@ -29,7 +29,7 @@ body {
     will-change: transform;
     display:flex; align-items:center; justify-content:center;
     border-radius: 100%;
-    box-shadow: 0 0 20vh 10vh rgb(178, 110, 255,0.4);
+    box-shadow: 0 0 20vh 10vh rgb(178, 110, 255, 0.4);
     margin: 0;
     padding: 0;
   }
@@ -429,7 +429,7 @@ h1 {
 }
 
 .useCase{
-  margin-top: 1vh;
+  margin-top: 2vh;
   font-weight: bold;
   font-size: 3vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -437,12 +437,11 @@ h1 {
 
 .infoBody{
   margin: 4vh;
+  white-space: pre-wrap;
   font-weight: 100;
   font-size: 3.2vh;
+  line-height: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  text-wrap: wrap;
 }
 
 .skillBgd {
