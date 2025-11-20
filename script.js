@@ -2,9 +2,26 @@
 const reveal = document.getElementById("follower");
 
 document.addEventListener("mousemove", (e) => {
-  reveal.style.setProperty("--x", e.clientX + "px");
-  reveal.style.setProperty("--y", e.clientY + "px");
+  reveal.style.setProperty("--x", e.pageX + "px");
+  reveal.style.setProperty("--y", e.pageY + "px");
 });
+
+
+
+// (function(){
+//   const follower = document.getElementById('follower');
+
+//   function move(x, y) {
+//     follower.style.transform = `translate(${x}px, ${y}px) translate(-50%, -50%)`;
+//   }
+
+//   window.addEventListener('pointermove', e => {
+//     move(e.clientX, e.clientY);
+//   }, { passive: true });
+// })();
+
+
+
 
 
 
