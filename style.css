@@ -1,7 +1,11 @@
+:root {
+  --accent: #53ed62;
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 70px; 
-    margin: 0;
+  margin: 0;
   padding: 0;
 }
 
@@ -17,22 +21,6 @@ body {
   margin: 0;
 }
 
-.follower {
-    position:fixed;
-    left:0;
-    top:0;
-    width:00px;
-    height:00px;
-    pointer-events:none;
-    transform: translate(-50%,-50%);
-    transition: none;
-    will-change: transform;
-    display:flex; align-items:center; justify-content:center;
-    border-radius: 100%;
-    box-shadow: 0 0 20vh 10vh rgb(178, 110, 255, 0.4);
-    margin: 0;
-    padding: 0;
-  }
 
 .topnav {
   height: 8vh;
@@ -48,7 +36,7 @@ body {
   left: 0;
   width: 100%;
   z-index: 100;
-  background-color: rgb(14, 0, 48, 0.2);
+  background-color: rgba(57, 57, 57, 0.2);
   backdrop-filter: blur(7px);
   overflow: hidden;
 }
@@ -89,7 +77,7 @@ body {
 
 .content {
   position: relative;
-  margin-top: 0;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -99,21 +87,18 @@ h1 {
 }
 
 .landingContainer {
-  position: relative;
   display: grid;
-  grid-template-columns: 1fr auto;
-  place-items: center;
-  margin: 0;
-  padding: 0;
-  width: 100%;
+  grid-template-columns: 1fr 3fr;
 }
 
 .landingImage {
   position: relative;
-  margin-top: 22vh;
+  margin-top: 50vh;
+  margin-left: 403px;
   display:block;
-  height: 45vh;
-  width: auto;
+  height: 380px;
+  width: 380px;
+  transform: translate(-50%, -50%) translate(20px, 10px);
   border-radius: 100%;
   /* border-width: 3px;
   border-color: black;
@@ -121,15 +106,20 @@ h1 {
   box-shadow: 0 0 2vh black;
   z-index: 20;
   padding:0;
+  object-fit: cover; 
   user-select: none;
 }
 
 .welcomeText {
-  position: relative;
-  margin-top: 7vh;
+  position: absolute;
+  margin-top: 365px;
+  margin-left:865px;
+  line-height: 1.2;
+  height: 110px;
   display:block;
   color:beige;
-  font-size: 5vh;
+  font-size: 50px;
+  transform: translate(-50%, -50%);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   z-index: 20;
   font-weight: bold;
@@ -140,7 +130,7 @@ h1 {
 }
 
 .name, .changingText {
-  color: #edbf40;
+  color: var(--accent);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   z-index: 20;
   margin: 0;
@@ -151,12 +141,7 @@ h1 {
   position: relative;
   height: 100vh;
   margin-left: 0;
-  width: 100%;
-  /* background: radial-gradient(circle 110vh, rgb(113, 69, 163), rgb(14, 0, 48)); */
-    background:
-    url('background.png'),
-    /* rgb(14, 0, 48); */
-  radial-gradient(circle 90vh at center, rgb(77, 48, 111), rgb(14, 0, 48));
+  width: 100%;  
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -166,19 +151,40 @@ h1 {
   overflow: hidden;
 }
 
+.bg {
+  position: absolute;
+  background-image: url("landingBackground.jpg");
+  z-index: -1;
+  inset: 0;
+  background-size: cover;
+}
+
+.blur {
+  filter: blur(7px);
+  transform: scale(1.1);
+}
+
+.spotlight {
+  transform: scale(1.1);
+  --size: 300px;
+  mask: radial-gradient(circle var(--size) at var(--x) var(--y), white 0%, transparent 70%);
+  -webkit-mask: radial-gradient(circle var(--size) at var(--x) var(--y), white 0%, transparent 70%);
+  color:white;
+}
 
 
+/* background colour here */
 .aboutSection {
   margin-top: 0;
   position: relative;
-    background-color:#1b122d;
+    background-color:#0f0f0f;
     z-index: 50;
     padding: 0;
     padding-bottom: 10vh;
 }
 
 #scrollhere {
-  scroll-margin-top: -10px; 
+  scroll-margin-top: -15px; 
 }
 
 .cursor {
@@ -246,14 +252,14 @@ h1 {
   width: 50vh;
   margin: 0 auto;
   padding-bottom: 2vh;
-  border-bottom: solid 0.8vh #edbf53;
+  border-bottom: solid 0.8vh var(--accent);
 }
 
 .bodyBackground {
-  background-color: rgb(14, 2, 49, 0.3);
+  background-color: rgba(56, 56, 56, 0.3);
   border-radius: 15px;
   border-width: 2px;
-  border-color: #edbf53;
+  border-color: var(--accent);
   border-style: solid;
   width: 80vh;
   margin-top: 10vh;
@@ -316,7 +322,7 @@ h1 {
   display: flex;
   padding: 0;
   margin: 0;
-  border: #edbf53;
+  border: var(--accent);
   border-style: solid;
   border-width: 4px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -333,7 +339,7 @@ h1 {
 }
 
 .diamond:hover {
-  box-shadow: 0 0 20px 5px #edbf53;
+  box-shadow: 0 0 20px 5px var(--accent);
   transform: scale(1.1) scaleY(1.5) rotate(45deg) ;
 }
 
@@ -348,7 +354,7 @@ h1 {
   text-align: center;
   border-width: 5px;
   border-style: solid;
-  border-color: #edbf53;
+  border-color: var(--accent);
 }
 
 .diamond:hover ~ .infoBox {
@@ -446,10 +452,11 @@ h1 {
 
 .skillBgd {
   margin:0;
+  margin-top: 50px;
   width: 100vw;
   height: 170vh;
-  background: url('skillsBackground.png');
-  background-position: -3px -1vh;
+  background: url('skillsbg5.png');
+  background-position: -3px 7vh;
   background-size: 100% auto;
   background-repeat: no-repeat;
     box-sizing: border-box;

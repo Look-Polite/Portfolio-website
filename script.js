@@ -1,15 +1,12 @@
 //This function makes a "glow" effect follow the cursor
-(function(){
-  const follower = document.getElementById('follower');
+const reveal = document.getElementById("follower");
 
-  function move(x, y) {
-    follower.style.transform = `translate(${x}px, ${y}px) translate(-50%, -50%)`;
-  }
+document.addEventListener("mousemove", (e) => {
+  reveal.style.setProperty("--x", e.clientX + "px");
+  reveal.style.setProperty("--y", e.clientY + "px");
+});
 
-  window.addEventListener('pointermove', e => {
-    move(e.clientX, e.clientY);
-  }, { passive: true });
-})();
+
 
 //This function creates a typing effect that cycles through a list of words
 const words = ["developer", "student", "creator", "learner"];
