@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Timothy Hang | Software Dev</title>
+  <link rel="icon" type="image/png" href="icons/websiteIcon.png">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,14 +14,14 @@
   <div class="topnav">
     <!-- left side of navbar for home button -->
     <div class="navleft">
-      <a href="#top" class="logo"><img src="icons/logo1.png" class="logo"></a>
+      <a href="#top" class="logo1"><img src="icons/logo1.png" class="logo1"></a>
     </div>
     
     <!-- right side of navbar for about + projects + etc -->
     <div class="navright">
-      <a href="about.html" class ="logo"> Contact Me</a>
-      <a href="about.html" class ="logo"> Projects </a>
-      <a href="#scrollhere" class ="logo"> About</a>
+      <a href="#contact" class ="logo"> Contact Me</a>
+      <!-- <a href="about.html" class ="logo"> Projects </a> -->
+      <a href="#about" class ="logo"> About</a>
     </div>
   </div>
   
@@ -31,17 +32,17 @@
       <div class="landingContainer">
         <div class="selfImage"><img src="home.jpg" class="landingImage"></div>
         <div class="welcomeText">
-          I'm <span class="name">Tim</span>, a: <br> <span class="name" id="changingText">student</span><span class="cursor">|</span>
+          I'm <span class="name">Tim,</span>       <br>a <span class="name" id="changingText">student</span><span class="cursor">|</span>
         </div>
       </div>
     
     </div>
     <div class="aboutSection">
-    <section id="scrollhere">
+    <section id="about">
       <div class="aboutMe">About Me</div>
       <br><br><br><br>
-      <div class="bodyBackground"><div class="bodyText"><br>Lorem ipsum dolor sit amet,  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco  deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div><br>
-      <a href="resume.pdf" target="_blank"> <button class="resume">Check out my Resume!</button> </a>
+      <div class="bodyBackground"><div class="bodyText"><br>Hey there, I'm Timothy, an IT student with a passion for solving interesting problems.  <br> Based in Melbourne, I’m always eager to learn more and am currently seeking internship opportunities to gain hands-on experience and grow my skills. I enjoy diving into coding projects, experimenting with new technologies, and figuring out how different systems work.</div><br>
+      <a href="resume.pdf"> <button class="resume">Check out my Resume!</button> </a>
     </div>
     <div class="skillBgd">
     <div class="aboutMe">Technical Skills</div>
@@ -76,6 +77,36 @@
   </div>
   </div>
   </div>
+  <div class="contact">
+    <section id="contact">
+  <div class="aboutMe">Contact Me</div>
+    <div class="formContainer">
+<form class="contactForm" id="contactForm" action="https://formspree.io/f/xeodvoaa" method="POST">
+  <div class="formField">
+  <label>
+    <span class="formInput">Email</span> <br>
+    <input class="cf email" type="email" name="email">
+  </label>
+  </div>
+  <div class="formField">
+    <label>
+    <span class="formInput">Name</span> <br>
+    <input class="cf fieldName" name="name"></input>
+  </label>
+</div>
+  <div class="formField">
+    <label>
+    <span class="formInput"> Message</span> <br>
+    <textarea class="cfmessage" name="message"></textarea>
+  </label>
+</div>
+    
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
+</div>
+<br><br>
+</div>
 
 <script src="script.js"></script>
 

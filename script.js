@@ -1,6 +1,8 @@
 //This function makes a "glow" effect follow the cursor
 const reveal = document.getElementById("follower");
 
+
+
 document.addEventListener("mousemove", (e) => {
   reveal.style.setProperty("--x", e.pageX + "px");
   reveal.style.setProperty("--y", e.pageY + "px");
@@ -106,10 +108,15 @@ php.addEventListener("mouseenter", () => {
 html.addEventListener("mouseenter", () => {
   text.textContent = "HTML";
   body.textContent = "• Coursework: styled websites made for class projects \n\n • Used to create the content of the website you're currently on"
+  spec.textContent = "Frontend";
+  spec.style.color = "rgb(78, 78, 255)";
 });
 
 css.addEventListener("mouseenter", () => {
   text.textContent = "CSS";
+  body.textContent = "• Coursework: styled websites made for class projects \n\n • Used to create the content of the website you're currently on"
+  spec.textContent = "Frontend";
+  spec.style.color = "rgb(78, 78, 255)";
 });
 
 aws.addEventListener("mouseenter", () => {
@@ -126,4 +133,15 @@ wireshark.addEventListener("mouseenter", () => {
 
 virtualbox.addEventListener("mouseenter", () => {
   text.textContent = "Virtualbox";
+});
+
+
+const nav = document.querySelector(".topnav");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 60) {
+    nav.classList.add("visible");
+  } else {
+    nav.classList.remove("visible");
+  }
 });
