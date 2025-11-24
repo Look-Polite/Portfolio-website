@@ -275,7 +275,7 @@ h1 {
   position: relative;
   display:block;
   color:white;
-  font-size: 9vh;
+  font-size: 60px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   z-index: 20;
   padding: 0;
@@ -546,6 +546,7 @@ h1 {
   font-size:20px;
   background-color: #333333;
   color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .cf:focus{
@@ -575,6 +576,7 @@ h1 {
   font-size:20px;
   background-color: #333333;
   color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .cfmessage:focus{
@@ -595,4 +597,12 @@ h1 {
   float: right;
   margin-right: 80px;
   margin-bottom: 20px;
+}
+
+input::placeholder {
+  opacity: 0.5;
+}
+
+textarea::placeholder{
+  opacity: 0.5;
 }
