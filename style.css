@@ -437,7 +437,7 @@ h1 {
 }
 
 .resume {
-  background-color: #edbf53;
+  background-color: var(--accent);
   color: black;
   border: none;
   padding: 5px;
@@ -449,7 +449,7 @@ h1 {
 }
 
 .resume:hover {
-  background-color: #fcbc28;   
+  background-color: #47ff5a;   
   transform: translateY(-1px);    
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
@@ -582,7 +582,7 @@ h1 {
   border-color: var(--accent);
 }
 
-button {
+.submitForm {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border-radius: 9999px;
   cursor: pointer;
