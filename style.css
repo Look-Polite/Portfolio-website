@@ -11,6 +11,30 @@
   --color-text-muted: #4f4f4f;
 }
 
+.infoBody{
+  text-align: left;
+  margin-left: 30px;
+  margin-top: -55px;
+  padding: 0px;
+  white-space: pre-wrap;
+  font-weight: 100;
+  font-size: 25px;
+  line-height: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: -10px;
+  line-height: 20px;
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 70px; 
@@ -310,7 +334,7 @@ h1 {
   margin: 0 auto;
   font-size: 3vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: left;
+  text-align: center;
 }
 
 .highlight {
@@ -466,6 +490,7 @@ h1 {
   font-weight: bold;
   font-size: 5vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color:orange;
 }
 
 .useCase{
@@ -473,16 +498,10 @@ h1 {
   font-weight: bold;
   font-size: 3vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 0px;
 }
 
-.infoBody{
-  margin: 4vh;
-  white-space: pre-wrap;
-  font-weight: 100;
-  font-size: 3.2vh;
-  line-height: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+
 
 .skillBgd {
   margin:0;
@@ -511,13 +530,15 @@ h1 {
   background-color:#0f0f0f;
   justify-content: center;
   margin: auto;
+  margin-top: -50px;
+  z-index: 100;
 }
 
 
 .contactForm{
   width: 55%;
   margin:auto;
-  background-color: rgba(56, 56, 56, 0.3);;
+  background-color: rgba(56, 56, 56, 0.3);
   border-radius: 20px;
   padding-top: 40px;
   border-style: solid;
@@ -597,6 +618,12 @@ h1 {
   float: right;
   margin-right: 80px;
   margin-bottom: 20px;
+  background-color: #333333;
+  color: white;
+}
+
+.submitForm:hover {
+  background-color: #282828; 
 }
 
 input::placeholder {

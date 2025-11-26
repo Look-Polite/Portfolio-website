@@ -79,60 +79,117 @@ const virtualbox = document.getElementById("virtualbox");
 
 java.addEventListener("mouseenter", () => {
   text.textContent = "Java";
-  body.textContent = "• Coursework: foundational coding and scripting applications\n\n• Personal Tic Tac Toe application";
+  body.innerHTML = `
+    <ul>
+      <li>Coursework: foundational coding and scripting applications</li>
+      <li>Personal Tic Tac Toe application</li>
+    </ul>
+  `;
   spec.textContent = "Backend";
   spec.style.color = "orange";
 });
 
 python.addEventListener("mouseenter", () => {
   text.textContent = "Python";
-  body.textContent = "• Coursework: machine learning applications including data processing and model training";
+  body.innerHTML = `
+    <ul>
+      <li>Coursework: Machine learning applications including data processing and model training</li>
+    </ul>
+  `;
   spec.textContent = "Backend";
   spec.style.color = "orange";
 });
 
 js.addEventListener("mouseenter", () => {
   text.textContent = "Javascript";
-  body.textContent = "• Coursework: handling responsive nature of coursework websites \n\n • Used to power the animations and interactive features of this site";
+  body.innerHTML = `
+    <ul>
+      <li>Coursework: handling responsive nature of coursework websites</li>
+      <li>Used to power the animations and interactive features of this site</li>
+    <ul>
+  `;
   spec.textContent = "Frontend";
   spec.style.color = "rgb(78, 78, 255)";
 });
 
 php.addEventListener("mouseenter", () => {
   text.textContent = "PHP";
-  body.textContent = "• Coursework: backend scripting and serverside form handling";
+    body.innerHTML = `
+    <ul>
+      <li>Coursework: backend scripting and serverside form handling</li>
+    </ul>
+  `;
   spec.textContent = "Backend";
   spec.style.color = "orange";
 });
 
 html.addEventListener("mouseenter", () => {
   text.textContent = "HTML";
-  body.textContent = "• Coursework: styled websites made for class projects \n\n • Used to create the content of the website you're currently on"
+  body.innerHTML = `
+    <ul>
+      <li>Coursework: created content for class projects</li>
+      <li>Used to build the layout and content of this website</li>
+    <ul>
+  `;
   spec.textContent = "Frontend";
   spec.style.color = "rgb(78, 78, 255)";
 });
 
 css.addEventListener("mouseenter", () => {
   text.textContent = "CSS";
-  body.textContent = "• Coursework: styled websites made for class projects \n\n • Used to create the content of the website you're currently on"
+  body.innerHTML = `
+    <ul>
+      <li>Coursework: styled websites made for class projects</li>
+      <li>Used to create the content of the website you're currently on</li>
+    <ul>
+  `;
   spec.textContent = "Frontend";
   spec.style.color = "rgb(78, 78, 255)";
 });
 
 aws.addEventListener("mouseenter", () => {
   text.textContent = "AWS";
+  body.innerHTML = `
+    <ul>
+      <li>Coursework: used to deploy websites in AWS suite</li>
+      <li>Configured cloud resources including EC2, S3, and VPCs</li>
+    <ul>
+  `;
+  spec.textContent = "DevOps";
+  spec.style.color = "rgba(255, 162, 0, 1)";
 });
 
 sql.addEventListener("mouseenter", () => {
   text.textContent = "SQL";
+    body.innerHTML = `
+    <ul>
+      <li>Coursework: Used to manage backend databases and perform query operations</li>
+    <ul>
+  `;
+  spec.textContent = "Backend";
+  spec.style.color = "orange";
 });
 
 wireshark.addEventListener("mouseenter", () => {
   text.textContent = "Wireshark";
+  spec.textContent = "Cybersecurity";
+  body.innerHTML = `
+    <ul>
+      <li>Coursework: Used to capture and analyse packets in lab environment</li>
+    <ul>
+  `;
+  spec.style.color = "rgba(255, 26, 91, 1)";
 });
 
 virtualbox.addEventListener("mouseenter", () => {
   text.textContent = "Virtualbox";
+  spec.textContent = "Cybersecurity";
+  body.innerHTML = `
+    <ul>
+      <li>Coursework: Created and managed virtual environments for testing purposes</li>
+    <ul>
+  `;
+  spec.style.color = "rgba(255, 26, 91, 1)";
 });
 
 
