@@ -139,10 +139,10 @@ h1 {
   grid-template-columns: 1fr 3fr;
 }
 
-.landingImage {
+.landingImage { 
   position: relative;
   margin-top: 50vh;
-  margin-left: 403px;
+  margin-left: 55vh;
   display:block;
   height: 380px;
   width: 380px;
